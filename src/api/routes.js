@@ -7,9 +7,9 @@ const gacha = require('./components/gacha/gacha-route');
 module.exports = () => {
   const app = express.Router();
 
-  gacha(app);
   books(app);
   users(app);
+  gacha(app);
 
   return app;
 };
